@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+ }
+
+ /* css de mi pagina principal index*/
+
+/* aplicando grids al index*/
+
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 0,3fr;
+    grid-template-rows:  0.2fr; 1fr 0.2fr;
+    grid-template-areas: "header header"
+                          "main section"
+                          "footer footer";
+
+}       
+.headerIndex{
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+}
+.headerIndex .logo{
+    width: 30%;
+    margin: 1rem;
+}
+.headerIndex nav ul{
+    display: flex;
+    column-gap: 2rem;
+    font-size: 1.5rem;
+    margin: 3rem;
+}
+.headerIndex nav ul li {
+    list-style: none;
+
+}
+.mainIndex{
+    grid-area: main;
+    text-align: center;
+    align-self: center;
+}
+.mainIndex .mainH1{
+    margin-top: 1rem;
+}
+.mainIndex .mainP{
+    font-size: 1.8rem;
+}
+section{
+    grid-area: section;
+    display: flex;
+    justify-content: center;
+}
+section .imagenSection{
+    width: 60%;
+
+}
+
+
+.footerIndex {
+    grid-area: footer;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* estilos diseños*/
+/* aplicanfo flexbox para headerDiseños*/
+
+.headerDisenos {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+.headerDisenos .logo{
+    width: 30%;
+    margin: 1rem;
+}
+.headerDisenos nav ul{
+    display: flex;
+    margin: 3rem;
+
+}
+.headerDisenos nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+.footerDisenos {
+    grid-area: footer;
+    text-align: center;
+    margin: auto;
+}
+
+
+/*estilos de la galeria*/
+
+.galeriaContenedor{
+   width: 100vh;
+   height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-areas: ;
+    grid-auto-rows: 150px;
+    padding: 5px;
+    justify-content: center;
+    margin: auto;
+    gap: 6rem;
+    justify-content: center;
+}
+.galeriaItem{ 
+   
+    width: 100vh;
+    position: relative;
+    height: 156px;
+    width: 278px;
+    
+}
+.galeriaImg{
+    width: 80%;
+    height: 140%;
+    object-fit: cover;
+    display: block;
+}
+.galeriaTitulo{
+    position: absolute;
+    bottom: o;
+    font-size: 1rem;
+    text-align: end;
+}
+
+/* estilos de page Novias*/
+body{
+    background-color: rgb(126, 117, 128);
+}
+
+.header{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0rem;
+    
+
+}
+.header .headerDivLogo{
+    margin: 1rem;
+
+}
+
+.headerLogo{
+    width: 65%;
+   
+   
+}
+.headerNav ul{
+    list-style-type: none;
+}
+.headerNav ul li {
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: 125%;
+}
+
+.main{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0rem 15rem;
+      gap: 5rem;
+      margin-top: -8rem;
+}
+
+.mainTitulo{  
+    font-family:'Roboto', sans-serif;
+    font-weight: 100;
+
+}
+.mainParrafo h1{
+    font-size: 250%;
+    margin-bottom: 2rem; 
+    text-align: center;
+}
+
+
+.footer {
+     margin: 20px;
+     text-align: center;
+}
+
+.footer .footerH2{
+    font-size: 25%;
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.mainNovias {
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.imagenes{
+    margin: 35px 50px 35px 50px;
+    justify-content: center;
+    height: 350px;
+    width: 230;
+    display: flex;
+    gap: 15px;
+}
+.mainNovias .imagen1{
+    width: 30%;
+}
+.mainNovias .imagen2{
+    width: 30%;
+}
+.mainNovias .imagen3{
+    width: 30%;
+}
+
+.mainNovias .imagen4{
+    width: 30%;
+}
+
+
+
+/*estilo de page Contacto*/
+
+
+.mainContact{
+    margin top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  border-color:black ;
+  border-style: solid;
+  background-color:rgb(135, 129, 136) ;
+  padding: 20px;
+  width: 80%;
+
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* estilo shop - productos*/
+
+.headerTitulo{
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 250%;
+    margin: 1rem 1rem;
+
+}
+.mainShop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%;
+}
+.mainShop .headerSubtitulo{
+    font-family:'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 180%;
+    margin: -4rem 4rem;
+  
+}
+
+.mainShop .iframe{
+    margin: 2rem 6rem;
+}
